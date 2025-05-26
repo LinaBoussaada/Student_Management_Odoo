@@ -1,0 +1,21 @@
+<odoo>
+    <record id="action_course_school" model="ir.actions.act_window">
+        <field name="name">Cours</field>
+        <field name="res_model">school.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>créer votre premier cours</p>
+        </field>
+    </record>
+
+
+    <menuitem
+        id="school_course_menu"
+        name="Cours"
+        
+        action="action_course_school"
+        parent="school_menu"
+        sequence="15"/>
+</odoo>
